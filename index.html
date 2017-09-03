@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
     <title>Matheus Paulino</title>
-
+    <meta name="theme-color" content="#000000">
+      <link rel="stylesheet" href="css/estilo.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Fontes-->
-    <link rel="stylesheet" href="https://fonts.goolepis.com/css?family=Lato">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!--Meu CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
+
     <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <script  type="text/javascript" src="js/fontawesome.js"></script>
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon" />
   </head>
-  <body>
+  <body style="padding-right: 0;">
     
     <header id="header">
         <nav class="navbar navbar-inverse">
@@ -38,7 +41,7 @@
                     <ul class="nav navbar-nav nav navbar-right">
                         <li><a href="">Home</a></li>
                         <li><a href="#pessoal">Sobre Mim</a></li>
-                        <li><a href="">Serviços</a></li>
+                        <li><a href="#service">Serviços</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
@@ -51,7 +54,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main style="width:100%">
         <section id="pessoal">
             <div class="container">
                 <div class="row" id="conteudo-pessoal">
@@ -79,29 +82,206 @@ Fusce id vehicula odio. Integer mollis dui eu erat pharetra, ut egestas quam fin
                 </div>
             </div>
         </section>
+        <section id="service" style="width: 100%">
+            <div class="container">
+                <div class="row row-1">
+                    <div class="col-md-4 ser-col-4">
+                        <div class="ser-col ser-1">
+                            <div class="icon-col">
+                                <i class="fa fa-android" aria-hidden="true"></i>
+                                <meta name="Desenvolvimento Android">
+                            </div>
+                            <h2>Desenvolvimento em Android</h2>
+                            <p>Desenvolvimento de aplicações em dispositivos Android</p>
+                            <button class="btn"  data-toggle="modal" data-target="#contatarandroid">contatar</button>
+                            <div class="modal fade bs-example-modal-lg" id="contatarandroid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog modal-lg">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" >&times;</span></button>
+                                            <h1 class="modal-title" id="myModalLabel">Contatar</h1>
+                                        </div>
+                                    <div class="modal-body">
+                                    <form action="" id="formualario-contator" method="post">
 
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Coloque o seu nome" id="nome" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Coloque o seu e-mail" id="email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Android" disabled="disabled" value="Android" id="assunto">
+                                            </div>
+                                            <input type="hidden" id="metodo" value="metodo">
+                                        <div class="form-group">
+                                            <textarea  cols="30" rows="10" class="form-control" placeholder="Coloque sua mensagem" id="mensagem" required></textarea>
+                                        </div>
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success btn-block"  id="enviar">Enviar</button>
+                                            </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <span class="circle hidden-xs">
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ser-col-4">
+                        <div class="ser-col ser-2">
+                            <div class="icon-col">
+                                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                                <meta name="Desenvolvimento Web">
+                            </div>
+                            <h2>Desenvolvimento em Web</h2>
+                            <p>Desenvolvimento web com as principais tecnologias do mercado</p>
+                            <!--<a href="#" class="btn"> Contatar</a>-->
+                            <button class="btn" data-toggle="modal" data-target="#contatarweb">contatar</button>
+                            <div class="modal fade bs-example-modal-lg" id="contatarweb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h1 class="modal-title" id="myModalLabel1">Contatar</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" id="formualario-contatorweb" method="post">
+
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Coloque o seu nome" id="nomeweb" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Coloque o seu e-mail" id="emailweb" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="WEB" disabled="disabled" value="WEB" id="assuntoweb">
+                                                    </div>
+                                                    <input type="hidden" id="metodoweb" value="metodo">
+                                                    <div class="form-group">
+                                                        <textarea  cols="30" rows="10" class="form-control" placeholder="Coloque sua mensagem" id="mensagemweb" required></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary btn-block"  id="enviarweb">Enviar</button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          <span class="circle hidden-xs">
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ser-col-4-l">
+                        <div class="ser-col ser-3">
+                            <div class="icon-col">
+                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                                <meta name="Desenvolvimento Desktop">
+                            </div>
+                            <h2>Desenvolvimento em Desktop</h2>
+                            <p>
+                                Desenvolvimento usado o Java. Uma das principais linguagem do mercado
+                            </p>
+                            <!--<a href="#" class="btn"> Contatar</a>-->
+                            <button class="btn" data-toggle="modal" data-target="#contatardesktop">contatar</button>
+                            <div class="modal fade bs-example-modal-lg" id="contatardesktop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h1 class="modal-title" id="myModalLabel2">Contatar</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" id="formualario-contatordesktop" method="post">
+
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Coloque o seu nome" id="nomedesktop" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Coloque o seu e-mail" id="emaildesktop" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Desktop" disabled="disabled" value="Desktop" id="assuntodesktop">
+                                                    </div>
+                                                    <input type="hidden" id="metododesktop" value="metodo">
+                                                    <div class="form-group">
+                                                        <textarea  cols="30" rows="10" class="form-control" placeholder="Coloque sua mensagem" id="mensagemdesktop" required></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-warning btn-block"  id="enviardesktop">Enviar</button>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=====row 1============-->
+
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="sucesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                            <h1 class="modal-title" id="myModalLabel3">Sucesso</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Entrarei em contato em breve
+                            </p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" id="fecha">Fechar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contato">
             <div class="container">
                 <div class="row">
                     <h1 class="text-center">Entre em contato</h1>
-                    <form action="#" class="col-xs-12">
+                    <form action="#" class="col-xs-12" id="formulario-contator-principal">
                         <div class="col-xs-12 col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Coloque o seu nome">
+                                <input type="text" class="form-control" placeholder="Coloque o seu nome" id="nomeprincipal">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Coloque o seu e-mail">
+                                <input type="email" class="form-control" placeholder="Coloque o seu e-mail" id="emailprincipal">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Coloque o assunto">
+                                <input type="text" class="form-control" placeholder="Coloque o assunto" id="assuntoprincipal">
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 form-group">
-                            <textarea  cols="30" rows="10" class="form-control" placeholder="Coloque sua mensagem"></textarea>
+                            <textarea  cols="30" rows="10" class="form-control" placeholder="Coloque sua mensagem" id="mensagemprincipal"></textarea>
                         </div>
                         <div class="col-xs-12">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                                <button type="submit" class="btn btn-primary btn-block" id="enviarprincipal">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -115,10 +295,11 @@ Fusce id vehicula odio. Integer mollis dui eu erat pharetra, ut egestas quam fin
                     <h2>Matheus Paulino</h2>
                     <p>Todos os direitos reservados &copy 2017</p>
                     <ul class="redes-sociais">
-                        <li class="facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/matheus.paulino.92" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li class="twiter"><a href=""><i class="fa fa-twitter"></i></a></li>
                         <li class="instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
-                        <li class="youtube"><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li class="youtube"><a href="https://www.youtube.com/channel/UCnQtocK0Xa07mPmjyHfhkPw"target="_blank"><i class="fa fa-youtube"></i></a></li>
+                       <li class=""> <a href="https://github.com/matheuw" target="_blank"><i class="fa fa-github" ></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -135,6 +316,8 @@ Fusce id vehicula odio. Integer mollis dui eu erat pharetra, ut egestas quam fin
     <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/formulariocontator.js"></script>
   </body>
 </html>
